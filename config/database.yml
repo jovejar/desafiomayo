@@ -26,4 +26,4 @@ production:
   username: desafiomayo
   password: <%= ENV["DESAFIOMAYO_DATABASE_PASSWORD"] %>
    # <<: *default
-  # database: db/production.sqlite3
+  # database: db/production.sqlite3el
