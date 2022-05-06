@@ -21,11 +21,9 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: sample_postgres_production
-  pool: 5
-  username: sample_postgres
-  password:
+  <<: *default
+  database: desafiomayo_production
+  username: desafiomayo
+  password: <%= ENV["DESAFIOMAYO_DATABASE_PASSWORD"] %>
    # <<: *default
   # database: db/production.sqlite3
